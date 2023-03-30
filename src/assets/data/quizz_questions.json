@@ -1,0 +1,65 @@
+{
+  "title":"Teste de Tipologia de Myers-Briggs",
+  "questions":[
+    {
+      "id":1,
+      "question": "Numa festa, você:",
+      "options":[
+        {"id": 1, "name":"Interage com todos, mesmo desconhecidos", "alias":"A"},
+        {"id": 2, "name":"Interage com poucos, todos conhecidos", "alias":"B"}
+      ]
+    },
+    {
+      "id":2,
+      "question": "Você é mais:",
+      "options":[
+        {"id": 1, "name":"Realista do que especulativo", "alias":"A"},
+        {"id": 2, "name":"Especulativo do que realista", "alias":"B"}
+      ]
+    },
+    {
+      "id":3,
+      "question": "É pior:",
+      "options":[
+        {"id": 1, "name":"Ter \"a cabeça nas nuvens\"", "alias":"A"},
+        {"id": 2, "name":"Ter uma rotina", "alias":"B"}
+      ]
+    },
+    {
+      "id":4,
+      "question": "Você se impressiona mais com:",
+      "options":[
+        {"id": 1, "name":"Princípios", "alias":"A"},
+        {"id": 2, "name":"Emoções", "alias":"B"}
+      ]
+    },
+    {
+      "id":5,
+      "question": "É atraído mais pelo:",
+      "options":[
+        {"id": 1, "name":"convincente", "alias":"A"},
+        {"id": 2, "name":"tocante", "alias":"B"}
+      ]
+    },
+    {
+      "id":6,
+      "question": "Prefere trabalhar:",
+      "options":[
+        {"id": 1, "name":"com prazos", "alias":"A"},
+        {"id": 2, "name":"quando der", "alias":"B"}
+      ]
+    },
+    {
+      "id":7,
+      "question": "Você tende a escolher:",
+      "options":[
+        {"id": 1, "name":"com cuidado", "alias":"A"},
+        {"id": 2, "name":"impulsivamente", "alias":"B"}
+      ]
+    }
+  ],
+  "results":{
+    "A": "Mais A!",
+    "B": "Mais B!"
+  }
+}
