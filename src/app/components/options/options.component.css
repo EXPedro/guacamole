@@ -1,0 +1,30 @@
+.options__quizz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom:  1.25rem;
+}
+
+.btn-option {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #18AB29;
+  width: 50%;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 1.0625rem;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2F6627;
+}
+
+.btn-option:hover{
+  background-color: #5CBF2A;
+}
+
+.btn-option:active{
+  position: relative;
+  top: 1px;
+}
