@@ -1,0 +1,28 @@
+.header__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 17.5rem;
+  height: auto;
+}
+
+.title {
+  color: #ffd47d;
+  font-size: 2.125rem;
+  text-transform: lowercase;
+  /*font-family: 'Kanit', sans-serif;*/
+  font-family: 'Josefin Slab', serif;
+}
+
+@media screen and (max-width: 303px) {
+  img {
+    width: 98vw;
+    padding: 0px 8px;
+  }
+  .title {
+    font-size: 11.3vw;
+  }
+}
