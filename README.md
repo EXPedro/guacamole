@@ -1,5 +1,7 @@
 # Guacamole
 
+![image](https://user-images.githubusercontent.com/80805367/229213950-c7f5c01c-ec5d-40ea-9da8-b45dd569c11e.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
 ## Development server
