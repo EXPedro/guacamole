@@ -3,10 +3,14 @@
   <app-question
   [questionSelected]="questionSelected"
   [finished]="finished"></app-question>
+
   <app-options
   [questionSelected]="questionSelected"
   [questions]="questions"
   [finished]="finished"
   (clicado)="nextStep($event)"></app-options>
-  <app-result [finished]="finished" ></app-result>
+
+  <app-result
+  [finished]="finished"
+  [answerSelected]="answerSelected"></app-result>
 </article>

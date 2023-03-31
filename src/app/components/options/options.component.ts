@@ -10,7 +10,7 @@ export class OptionsComponent  implements OnInit {
   @Input() questionSelected: any
   @Input() questions: any
   @Input() finished: boolean = false
-  answers: string[] = []
+  //answers: string[] = []
   @Output() clicado = new EventEmitter<string>();
   //questionIndex: number = 0
   //questionMaxIndex: number = 0
@@ -24,9 +24,9 @@ export class OptionsComponent  implements OnInit {
   }
 
   playerChoose(value: string){
-    this.answers.push(value)
+    //this.answers.push(value)
     this.nextQuestion(value)
-    console.log(this.answers)
+    //console.log(this.answers)
   }
 
   nextQuestion(value: string) {

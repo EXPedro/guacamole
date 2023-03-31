@@ -33,12 +33,33 @@ export class QuizzComponent   implements OnInit {
 
   async nextStep(value: string){
     this.questionIndex += 1
+    this.answers.push(value)
+    console.log(this.answers)
+
     if(this.questionMaxIndex > this.questionIndex){
       this.questionSelected = this.questions[this.questionIndex]
     }else{
+      const finalAnswer:string = await this.checkResult(this.answers)
       this.finished = true
+      this.answerSelected = quizz_question.results[finalAnswer as keyof typeof quizz_question.results ]
     }
     console.log(this.questionIndex)
+  }
+
+  async checkResult(anwsers:string[]){
+
+    const result = anwsers.reduce((previous, current, i, arr)=>{
+        if(
+          arr.filter(item => item === previous).length >
+          arr.filter(item => item === current).length
+        ){
+          return previous
+        }else{
+          return current
+        }
+    })
+
+    return result
   }
 
 }

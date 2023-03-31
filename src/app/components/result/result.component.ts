@@ -7,8 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ResultComponent implements OnInit {
 
-  answers: string[] = []
-  answerSelected: string = ""
+  //answers: string[] = []
+  @Input() answerSelected: string = ""
   @Input() finished: boolean = false
 
   constructor(){}
