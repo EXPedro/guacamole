@@ -1,6 +1,12 @@
 <article class="quizz__container">
-  <app-header></app-header>
-  <app-question></app-question>
-  <app-options></app-options>
-  <app-result></app-result>
+  <app-header [subtitle] = "subtitle"></app-header>
+  <app-question
+  [questionSelected]="questionSelected"
+  [finished]="finished"></app-question>
+  <app-options
+  [questionSelected]="questionSelected"
+  [questions]="questions"
+  [finished]="finished"
+  (clicado)="nextStep($event)"></app-options>
+  <app-result [finished]="finished" ></app-result>
 </article>

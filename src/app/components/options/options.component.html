@@ -1,5 +1,8 @@
-<article class="options__quizz">
-  <button class="btn-option">
-    optionname
+<article *ngIf="!finished" class="options__quizz">
+  <button
+  *ngFor="let option of questionSelected.options; let i = index"
+  (click)="playerChoose(option.alias)"
+  class="btn-option">
+    {{ option.name }}
   </button>
 </article>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-question',
@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
 
-  questions: any
-  questionSelected: any
-  questionIndex: number = 0
-  questionMaxIndex: number = 0
+  //@Input() questions: any
+  @Input() questionSelected: any
+  @Input() finished: boolean = false
+  //@Input() questionIndex: number = 0
+  //@Input() questionMaxIndex: number = 0
 
   constructor(){}
 

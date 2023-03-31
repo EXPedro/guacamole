@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-result',
@@ -9,7 +9,7 @@ export class ResultComponent implements OnInit {
 
   answers: string[] = []
   answerSelected: string = ""
-  finished: boolean = false
+  @Input() finished: boolean = false
 
   constructor(){}
 
